@@ -114,29 +114,7 @@ card.style.boxShadow="";
 
 });
 
-// Floating Animation
 
-document.querySelectorAll(".card").forEach((card,index)=>{
-
-setInterval(()=>{
-
-card.animate([
-
-{transform:"translateY(0)"},
-
-{transform:"translateY(-8px)"},
-
-{transform:"translateY(0)"}
-
-],{
-
-duration:2500+index*250
-
-});
-
-},3500);
-
-});
 // ===========================
 // LANGUAGE SWITCHER (added)
 // ===========================
@@ -163,6 +141,12 @@ en: {
 "templates.mechanic.desc":"Professional auto garage website.",
 "templates.gym.title":"Gym & Fitness",
 "templates.gym.desc":"Powerful fitness landing page.",
+"templates.bakery.title":"Bakery",
+"templates.bakery.desc":"Fresh bakery website with a warm, inviting design.",
+"templates.photographer.title":"Photographer",
+"templates.photographer.desc":"Elegant portfolio website for photographers.",
+"templates.realestate.title":"Real Estate",
+"templates.realestate.desc":"Modern property listing website for real-estate professionals.",
 "about.title":"Why Choose Me?",
 "about.responsive.title":"Responsive",
 "about.responsive.desc":"Looks perfect on phones, tablets and desktops.",
@@ -197,6 +181,12 @@ fr: {
 "templates.mechanic.desc":"Site web professionnel pour garage automobile.",
 "templates.gym.title":"Salle de sport",
 "templates.gym.desc":"Page d'accueil percutante pour salle de sport.",
+"templates.bakery.title":"Boulangerie",
+"templates.bakery.desc":"Site web chaleureux et moderne pour boulangerie.",
+"templates.photographer.title":"Photographe",
+"templates.photographer.desc":"Portfolio élégant pour photographes.",
+"templates.realestate.title":"Immobilier",
+"templates.realestate.desc":"Site moderne d'annonces immobilières.",
 "about.title":"Pourquoi me choisir ?",
 "about.responsive.title":"Responsive",
 "about.responsive.desc":"Parfait sur mobiles, tablettes et ordinateurs.",
@@ -231,6 +221,12 @@ ar: {
 "templates.mechanic.desc":"موقع احترافي لورش السيارات.",
 "templates.gym.title":"نادي رياضي",
 "templates.gym.desc":"صفحة قوية لصالات اللياقة البدنية.",
+"templates.bakery.title":"مخبزة",
+"templates.bakery.desc":"موقع عصري ودافئ للمخابز.",
+"templates.photographer.title":"مصور فوتوغرافي",
+"templates.photographer.desc":"موقع أعمال أنيق للمصورين.",
+"templates.realestate.title":"العقارات",
+"templates.realestate.desc":"موقع حديث لعرض العقارات.",
 "about.title":"لماذا تختارني؟",
 "about.responsive.title":"متجاوب",
 "about.responsive.desc":"يظهر بشكل مثالي على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر.",

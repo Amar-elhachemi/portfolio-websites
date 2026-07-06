@@ -1,0 +1,846 @@
+:root {
+--cream: #f7f0e4;
+--butter: #f2c94c;
+--orange: #d96c38;
+--cocoa: #3e281e;
+--brown: #6d4532;
+--soft-brown: #9c7259;
+--line: rgba(62, 40, 30, 0.18);
+--serif: "Fraunces", Georgia, serif;
+--sans: "DM Sans", Arial, sans-serif;
+--mono: "DM Mono", monospace;
+--script: "Nanum Pen Script", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+background: var(--cream);
+color: var(--cocoa);
+font-family: var(--sans);
+overflow-x: hidden;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+img {
+display: block;
+width: 100%;
+}
+
+.grain {
+background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+inset: 0;
+opacity: 0.08;
+pointer-events: none;
+position: fixed;
+z-index: 100;
+}
+
+.cursor {
+border: 1px solid var(--cocoa);
+border-radius: 50%;
+height: 28px;
+left: 0;
+pointer-events: none;
+position: fixed;
+top: 0;
+transform: translate(-50%, -50%);
+transition: width 0.25s, height 0.25s, background 0.25s;
+width: 28px;
+z-index: 101;
+}
+
+.cursor.big {
+background: rgba(242, 201, 76, 0.32);
+height: 58px;
+width: 58px;
+}
+
+.section-space {
+padding-left: 7vw;
+padding-right: 7vw;
+}
+
+.header {
+align-items: center;
+display: flex;
+justify-content: space-between;
+left: 0;
+padding: 25px 7vw;
+position: fixed;
+top: 0;
+transition: 0.3s;
+width: 100%;
+z-index: 20;
+}
+
+.header.scrolled {
+background: rgba(247, 240, 228, 0.92);
+backdrop-filter: blur(14px);
+box-shadow: 0 5px 20px rgba(62, 40, 30, 0.06);
+}
+
+.logo {
+font-family: var(--serif);
+font-size: 1.28rem;
+font-weight: 800;
+letter-spacing: -0.07em;
+}
+
+.logo span {
+color: var(--orange);
+font-style: italic;
+margin: 0 2px;
+}
+
+.nav-links {
+display: flex;
+gap: 35px;
+}
+
+.nav-links a,
+.header-order,
+.section-label,
+.eyebrow,
+.hero-side-note,
+.hero-count,
+.pastry-info > div > p,
+.pastry-tag,
+.visit-details span,
+footer p,
+footer div {
+font-family: var(--mono);
+font-size: 0.63rem;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+
+.header-order {
+border-bottom: 1px solid var(--cocoa);
+padding-bottom: 7px;
+}
+
+.header-order span {
+font-size: 1rem;
+margin-left: 7px;
+}
+
+.menu-btn {
+background: transparent;
+border: 0;
+display: none;
+height: 30px;
+width: 35px;
+}
+
+.menu-btn span {
+background: var(--cocoa);
+display: block;
+height: 1px;
+margin: 7px 0;
+width: 100%;
+}
+
+.hero {
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+min-height: 100vh;
+overflow: hidden;
+position: relative;
+}
+
+.hero-copy {
+align-self: center;
+padding: 145px 4vw 70px 7vw;
+}
+
+.eyebrow {
+color: var(--orange);
+margin-bottom: 22px;
+}
+
+.hero h1,
+.story h2,
+.menu h2,
+.ingredients h2,
+.visit h2 {
+font-family: var(--serif);
+font-size: clamp(4rem, 7.2vw, 8.5rem);
+font-weight: 600;
+letter-spacing: -0.08em;
+line-height: 0.84;
+}
+
+em {
+color: var(--orange);
+font-style: italic;
+font-weight: 500;
+}
+
+.hero-bottom {
+align-items: flex-end;
+display: flex;
+justify-content: space-between;
+margin-top: 55px;
+max-width: 690px;
+}
+
+.hero-bottom p,
+.story-text p,
+.ingredients-copy > p {
+color: var(--brown);
+font-size: 0.92rem;
+line-height: 1.8;
+}
+
+.round-button {
+align-items: center;
+background: var(--butter);
+border-radius: 50%;
+display: flex;
+font-family: var(--mono);
+font-size: 0.6rem;
+height: 126px;
+justify-content: center;
+letter-spacing: 0.06em;
+line-height: 1.5;
+position: relative;
+text-align: center;
+text-transform: uppercase;
+transition: transform 0.35s;
+width: 126px;
+}
+
+.round-button:hover {
+transform: rotate(-10deg) scale(1.06);
+}
+
+.round-button b {
+bottom: 15px;
+font-family: var(--serif);
+font-size: 1.2rem;
+position: absolute;
+}
+
+.hero-photo {
+min-height: 100vh;
+overflow: hidden;
+position: relative;
+}
+
+.hero-photo img {
+height: 100%;
+object-fit: cover;
+transform: scale(1.06);
+transition: transform 5s ease;
+}
+
+.hero.loaded .hero-photo img {
+transform: scale(1);
+}
+
+.hero-sticker {
+background: var(--butter);
+border-radius: 50%;
+bottom: 8%;
+font-family: var(--script);
+font-size: 2.15rem;
+height: 140px;
+line-height: 0.78;
+padding-top: 35px;
+position: absolute;
+right: 9%;
+text-align: center;
+transform: rotate(12deg);
+width: 140px;
+}
+
+.hero-side-note {
+bottom: 34px;
+left: 7vw;
+position: absolute;
+}
+
+.hero-count {
+bottom: 34px;
+position: absolute;
+right: 4vw;
+}
+
+.marquee {
+background: var(--orange);
+color: var(--cream);
+overflow: hidden;
+padding: 17px 0;
+white-space: nowrap;
+}
+
+.marquee-track {
+animation: marquee 20s linear infinite;
+display: inline-flex;
+gap: 25px;
+}
+
+.marquee span {
+font-family: var(--serif);
+font-size: 1.4rem;
+font-style: italic;
+}
+
+.marquee i {
+color: var(--butter);
+font-style: normal;
+font-size: 1.15rem;
+}
+
+@keyframes marquee {
+from { transform: translateX(0); }
+to { transform: translateX(-50%); }
+}
+
+.story {
+display: grid;
+gap: 70px;
+grid-template-columns: 1fr 3fr;
+padding-bottom: 160px;
+padding-top: 160px;
+}
+
+.section-label {
+color: var(--soft-brown);
+padding-top: 12px;
+}
+
+.story h2,
+.menu h2,
+.ingredients h2,
+.visit h2 {
+font-size: clamp(3rem, 5.5vw, 6.2rem);
+line-height: 0.94;
+}
+
+.story-text {
+display: flex;
+gap: 75px;
+justify-content: flex-end;
+margin-left: auto;
+margin-top: 60px;
+max-width: 770px;
+}
+
+.story-text p {
+max-width: 390px;
+}
+
+.text-link {
+align-self: flex-end;
+border-bottom: 1px solid var(--cocoa);
+font-family: var(--mono);
+font-size: 0.65rem;
+letter-spacing: 0.06em;
+padding-bottom: 8px;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+.text-link span {
+font-size: 1rem;
+margin-left: 10px;
+}
+
+.menu {
+background: var(--cocoa);
+color: var(--cream);
+padding: 145px 0 110px;
+}
+
+.menu .section-label {
+color: var(--butter);
+}
+
+.menu h2 em {
+color: var(--butter);
+}
+
+.menu-heading {
+display: flex;
+justify-content: space-between;
+margin-bottom: 90px;
+}
+
+.menu-heading h2 {
+text-align: right;
+}
+
+.pastry-grid {
+display: grid;
+gap: 18px;
+grid-template-columns: repeat(12, 1fr);
+padding: 0 3vw;
+}
+
+.pastry-card {
+overflow: hidden;
+}
+
+.large {
+grid-column: 1 / 8;
+}
+
+.small {
+grid-column: 9 / 13;
+margin-top: 125px;
+}
+
+.wide {
+grid-column: 2 / 12;
+margin-top: 75px;
+}
+
+.pastry-image {
+height: 620px;
+overflow: hidden;
+position: relative;
+}
+
+.small .pastry-image {
+height: 480px;
+}
+
+.wide .pastry-image {
+height: 560px;
+}
+
+.pastry-image img {
+height: 100%;
+object-fit: cover;
+transition: transform 0.8s;
+}
+
+.pastry-card:hover img {
+transform: scale(1.06);
+}
+
+.pastry-tag {
+background: var(--butter);
+color: var(--cocoa);
+left: 18px;
+padding: 9px 12px;
+position: absolute;
+top: 18px;
+}
+
+.pastry-tag.cocoa {
+background: var(--cream);
+}
+
+.pastry-info {
+align-items: flex-start;
+display: flex;
+justify-content: space-between;
+padding: 20px 0;
+}
+
+.pastry-info > div > p {
+color: var(--butter);
+}
+
+.pastry-info h3 {
+font-family: var(--serif);
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: -0.05em;
+margin: 5px 0 7px;
+}
+
+.pastry-info span {
+color: rgba(247, 240, 228, 0.7);
+font-size: 0.78rem;
+}
+
+.pastry-info strong {
+color: var(--butter);
+font-family: var(--serif);
+font-size: 1.7rem;
+font-weight: 500;
+padding-top: 10px;
+}
+
+.menu-footer {
+align-items: center;
+display: flex;
+justify-content: space-between;
+margin-top: 90px;
+}
+
+.menu-footer p {
+font-family: var(--serif);
+font-size: 1.45rem;
+font-style: italic;
+}
+
+.menu-footer .text-link {
+border-color: var(--cream);
+}
+
+.ingredients {
+align-items: center;
+background: var(--butter);
+display: flex;
+height: 790px;
+overflow: hidden;
+position: relative;
+}
+
+.ingredients-photo {
+background: url("https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1800&q=90") center / cover;
+height: 100%;
+width: 50%;
+}
+
+.ingredients-copy {
+padding: 0 8vw;
+width: 50%;
+}
+
+.ingredients-copy .eyebrow {
+color: var(--brown);
+}
+
+.ingredients-copy h2 em {
+color: var(--orange);
+}
+
+.ingredients-copy > p {
+margin: 32px 0;
+max-width: 360px;
+}
+
+.cream-button {
+background: var(--cream);
+display: inline-block;
+font-family: var(--mono);
+font-size: 0.65rem;
+letter-spacing: 0.06em;
+padding: 17px 23px;
+text-transform: uppercase;
+transition: transform 0.3s;
+}
+
+.cream-button:hover {
+transform: translateY(-5px);
+}
+
+.cream-button span {
+font-size: 1rem;
+margin-left: 18px;
+}
+
+.scribble {
+bottom: 45px;
+color: var(--orange);
+font-family: var(--script);
+font-size: 3.4rem;
+line-height: 0.7;
+position: absolute;
+right: 7vw;
+transform: rotate(-10deg);
+}
+
+.visit {
+display: grid;
+gap: 70px;
+grid-template-columns: 1fr 3fr;
+padding-bottom: 150px;
+padding-top: 150px;
+}
+
+.visit-content {
+display: flex;
+justify-content: space-between;
+}
+
+.email-link {
+border-bottom: 1px solid var(--cocoa);
+display: inline-block;
+font-family: var(--mono);
+font-size: clamp(0.75rem, 1.2vw, 1rem);
+margin-top: 42px;
+padding-bottom: 10px;
+}
+
+.email-link span {
+font-size: 1.2rem;
+margin-left: 15px;
+}
+
+.visit-details {
+display: flex;
+gap: 75px;
+padding-top: 20px;
+}
+
+.visit-details span {
+color: var(--soft-brown);
+}
+
+.visit-details p {
+font-family: var(--serif);
+font-size: 1.15rem;
+line-height: 1.5;
+margin-top: 10px;
+}
+
+.closing {
+height: 650px;
+overflow: hidden;
+position: relative;
+}
+
+.closing-image,
+.closing-overlay {
+inset: 0;
+position: absolute;
+}
+
+.closing-image {
+background: url("https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=2000&q=90") center / cover;
+}
+
+.closing-overlay {
+background: rgba(62, 40, 30, 0.45);
+}
+
+.closing-text {
+bottom: 65px;
+color: var(--cream);
+font-family: var(--serif);
+font-size: clamp(4rem, 8vw, 9rem);
+font-weight: 500;
+left: 7vw;
+letter-spacing: -0.08em;
+line-height: 0.8;
+position: absolute;
+z-index: 2;
+}
+
+.closing-text em {
+color: var(--butter);
+}
+
+.closing-note {
+bottom: 45px;
+color: var(--cream);
+font-family: var(--mono);
+font-size: 0.65rem;
+letter-spacing: 0.07em;
+position: absolute;
+right: 7vw;
+text-transform: uppercase;
+z-index: 2;
+}
+
+footer {
+align-items: center;
+display: flex;
+justify-content: space-between;
+padding: 32px 7vw;
+}
+
+footer div {
+display: flex;
+gap: 20px;
+}
+
+.reveal {
+opacity: 0;
+transform: translateY(35px);
+transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+.cursor {
+display: none;
+}
+
+.header {
+padding: 22px 7vw;
+}
+
+.nav-links,
+.header-order {
+display: none;
+}
+
+.menu-btn {
+display: block;
+z-index: 3;
+}
+
+.nav-links.active {
+align-items: center;
+background: var(--cream);
+display: flex;
+flex-direction: column;
+inset: 0;
+justify-content: center;
+position: fixed;
+}
+
+.hero {
+display: flex;
+min-height: 780px;
+}
+
+.hero-copy {
+padding: 150px 7vw 95px;
+position: relative;
+z-index: 2;
+}
+
+.hero-photo {
+inset: 0;
+opacity: 0.27;
+position: absolute;
+}
+
+.hero-bottom {
+margin-top: 45px;
+}
+
+.round-button {
+height: 96px;
+width: 96px;
+}
+
+.hero-side-note {
+bottom: 28px;
+}
+
+.hero-count {
+bottom: 28px;
+}
+
+.story,
+.visit {
+display: block;
+padding-bottom: 100px;
+padding-top: 100px;
+}
+
+.story-content h2 {
+margin-top: 40px;
+}
+
+.story-text {
+display: block;
+margin-top: 35px;
+}
+
+.story-text .text-link {
+display: inline-block;
+margin-top: 25px;
+}
+
+.menu {
+padding-top: 100px;
+}
+
+.menu-heading {
+display: block;
+margin-bottom: 55px;
+}
+
+.menu-heading h2 {
+margin-top: 35px;
+text-align: left;
+}
+
+.pastry-grid {
+display: block;
+padding: 0 5vw;
+}
+
+.pastry-card,
+.large,
+.small,
+.wide {
+margin: 0 0 35px;
+}
+
+.pastry-image,
+.small .pastry-image,
+.wide .pastry-image {
+height: 440px;
+}
+
+.menu-footer {
+display: block;
+margin-top: 45px;
+}
+
+.menu-footer .text-link {
+display: inline-block;
+margin-top: 25px;
+}
+
+.ingredients {
+display: block;
+height: auto;
+}
+
+.ingredients-photo {
+height: 420px;
+width: 100%;
+}
+
+.ingredients-copy {
+padding: 80px 7vw 110px;
+width: 100%;
+}
+
+.scribble {
+bottom: 38px;
+}
+
+.visit-content {
+display: block;
+margin-top: 40px;
+}
+
+.visit-details {
+gap: 40px;
+margin-top: 50px;
+}
+
+.closing {
+height: 560px;
+}
+
+.closing-note {
+display: none;
+}
+
+footer {
+align-items: flex-start;
+flex-direction: column;
+gap: 18px;
+}
+}
