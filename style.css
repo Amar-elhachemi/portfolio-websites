@@ -489,9 +489,17 @@ display:none;
 
 }
 
+nav{
+
+gap:12px;
+
+}
+
 .btn{
 
-display:none;
+padding:10px 20px;
+
+font-size:14px;
 
 }
 
@@ -502,5 +510,234 @@ display:none;
 font-size:40px;
 
 }
+
+}
+/* ===========================
+LANGUAGE SWITCHER (added)
+=========================== */
+
+.lang-switch{
+
+position:relative;
+
+margin-right:10px;
+
+}
+
+.lang-globe{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+background:transparent;
+
+border:1px solid rgba(255,255,255,.15);
+
+color:#ddd;
+
+padding:10px 16px;
+
+border-radius:30px;
+
+font-family:'Poppins',sans-serif;
+
+font-size:13px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.lang-globe i{
+
+font-size:16px;
+
+color:#4f8cff;
+
+}
+
+.lang-globe:hover{
+
+border-color:#4f8cff;
+
+color:#fff;
+
+}
+
+.lang-dropdown{
+
+position:absolute;
+
+top:calc(100% + 12px);
+
+right:0;
+
+background:#181b23;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:14px;
+
+padding:8px;
+
+min-width:150px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:4px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(-8px);
+
+transition:.25s;
+
+z-index:1000;
+
+}
+
+.lang-dropdown.open{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
+}
+
+.lang-option{
+
+background:transparent;
+
+border:none;
+
+color:#bbb;
+
+text-align:left;
+
+padding:10px 14px;
+
+border-radius:8px;
+
+font-family:'Poppins',sans-serif;
+
+font-size:14px;
+
+font-weight:500;
+
+cursor:pointer;
+
+transition:.2s;
+
+}
+
+.lang-option:hover{
+
+background:rgba(79,140,255,.12);
+
+color:#fff;
+
+}
+
+.lang-option.active{
+
+background:#4f8cff;
+
+color:#fff;
+
+}
+
+@media(max-width:900px){
+
+.lang-switch{
+
+margin-right:0;
+
+}
+
+.lang-globe span{
+
+display:none;
+
+}
+
+.lang-globe{
+
+padding:10px 14px;
+
+}
+
+.lang-dropdown{
+
+right:auto;
+
+left:50%;
+
+transform:translate(-50%,-8px);
+
+}
+
+.lang-dropdown.open{
+
+transform:translate(-50%,0);
+
+}
+
+}
+
+/* ===========================
+RTL SUPPORT (Arabic, added)
+=========================== */
+
+html[dir="rtl"] body{
+
+font-family:'Cairo','Poppins',sans-serif;
+
+}
+
+html[dir="rtl"] nav ul{
+
+padding-right:0;
+
+}
+
+html[dir="rtl"] .buttons{
+
+flex-direction:row-reverse;
+
+}
+
+html[dir="rtl"] .lang-switch{
+
+margin-right:0;
+
+margin-left:10px;
+
+}
+
+html[dir="rtl"] .lang-dropdown{
+
+right:auto;
+
+left:0;
+
+}
+
+html[dir="rtl"] .lang-option{
+
+text-align:right;
 
 }

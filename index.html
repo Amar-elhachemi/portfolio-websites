@@ -13,7 +13,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -35,15 +35,37 @@ AMAR<span>.</span>
 
 <ul>
 
-<li><a href="#templates">Templates</a></li>
+<li><a href="#templates" data-i18n="nav.templates">Templates</a></li>
 
-<li><a href="#about">About</a></li>
+<li><a href="#about" data-i18n="nav.about">About</a></li>
 
-<li><a href="#contact">Contact</a></li>
+<li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
 
 </ul>
 
-<a href="https://wa.me/213550030651?text=Hello%20Amar,%20I%20found%20your%20website%20portfolio%20and%20I'm%20interested%20in%20getting%20a%20website." class="btn" target="_blank">
+<div class="lang-switch">
+
+<button type="button" class="lang-globe" id="langGlobeBtn" aria-label="Change language">
+
+<i class="fa-solid fa-globe"></i>
+
+<span id="langGlobeCode">EN</span>
+
+</button>
+
+<div class="lang-dropdown" id="langDropdown">
+
+<button type="button" class="lang-option active" data-lang="en">English</button>
+
+<button type="button" class="lang-option" data-lang="fr">Français</button>
+
+<button type="button" class="lang-option" data-lang="ar">العربية</button>
+
+</div>
+
+</div>
+
+<a href="https://wa.me/213550030651?text=Hello%20Amar,%20I%20found%20your%20website%20portfolio%20and%20I'm%20interested%20in%20getting%20a%20website." class="btn" target="_blank" data-i18n="nav.hire">
 Hire Me
 </a>
 
@@ -53,19 +75,19 @@ Hire Me
 
 <section class="hero">
 
-<h1>
+<h1 data-i18n="hero.title">
 
 Modern Websites That Help Businesses Grow
 
 </h1>
 
-<p>
+<p data-i18n="hero.subtitle">
 
 Professional responsive websites for restaurants, cafés, gyms, beauty salons, mechanics and more.
 
 </p>
 
-<a href="#templates" class="hero-btn">
+<a href="#templates" class="hero-btn" data-i18n="hero.btn">
 
 View Templates
 
@@ -75,13 +97,13 @@ View Templates
 
 <section id="templates" class="templates">
 
-<h2>
+<h2 data-i18n="templates.title">
 
 Website Templates
 
 </h2>
 
-<p>
+<p data-i18n="templates.subtitle">
 
 Click any template to open the live demo.
 
@@ -93,19 +115,19 @@ Click any template to open the live demo.
 
 <i class="fa-solid fa-mug-hot"></i>
 
-<h3>
+<h3 data-i18n="templates.coffee.title">
 
 Coffee Shop
 
 </h3>
 
-<p>
+<p data-i18n="templates.coffee.desc">
 
 Warm modern café website.
 
 </p>
 
-<a href="coffee/index.html">
+<a href="coffee/index.html" data-i18n="templates.demo">
 
 View Demo
 
@@ -117,19 +139,19 @@ View Demo
 
 <i class="fa-solid fa-utensils"></i>
 
-<h3>
+<h3 data-i18n="templates.restaurant.title">
 
 Restaurant
 
 </h3>
 
-<p>
+<p data-i18n="templates.restaurant.desc">
 
 Luxury restaurant landing page.
 
 </p>
 
-<a href="restaurant/index.html">
+<a href="restaurant/index.html" data-i18n="templates.demo">
 
 View Demo
 
@@ -141,19 +163,19 @@ View Demo
 
 <i class="fa-solid fa-scissors"></i>
 
-<h3>
+<h3 data-i18n="templates.beauty.title">
 
 Beauty Salon
 
 </h3>
 
-<p>
+<p data-i18n="templates.beauty.desc">
 
 Elegant beauty & spa website.
 
 </p>
 
-<a href="beauty/index.html">
+<a href="beauty/index.html" data-i18n="templates.demo">
 
 View Demo
 
@@ -165,19 +187,19 @@ View Demo
 
 <i class="fa-solid fa-screwdriver-wrench"></i>
 
-<h3>
+<h3 data-i18n="templates.mechanic.title">
 
 Mechanic
 
 </h3>
 
-<p>
+<p data-i18n="templates.mechanic.desc">
 
 Professional auto garage website.
 
 </p>
 
-<a href="mechanic/index.html">
+<a href="mechanic/index.html" data-i18n="templates.demo">
 
 View Demo
 
@@ -189,19 +211,19 @@ View Demo
 
 <i class="fa-solid fa-dumbbell"></i>
 
-<h3>
+<h3 data-i18n="templates.gym.title">
 
 Gym & Fitness
 
 </h3>
 
-<p>
+<p data-i18n="templates.gym.desc">
 
 Powerful fitness landing page.
 
 </p>
 
-<a href="gym/index.html">
+<a href="gym/index.html" data-i18n="templates.demo">
 
 View Demo
 
@@ -215,7 +237,7 @@ View Demo
 
 <section id="about" class="about">
 
-<h2>
+<h2 data-i18n="about.title">
 
 Why Choose Me?
 
@@ -227,13 +249,13 @@ Why Choose Me?
 
 <i class="fa-solid fa-mobile-screen-button"></i>
 
-<h3>
+<h3 data-i18n="about.responsive.title">
 
 Responsive
 
 </h3>
 
-<p>
+<p data-i18n="about.responsive.desc">
 
 Looks perfect on phones, tablets and desktops.
 
@@ -245,13 +267,13 @@ Looks perfect on phones, tablets and desktops.
 
 <i class="fa-solid fa-gauge-high"></i>
 
-<h3>
+<h3 data-i18n="about.fast.title">
 
 Fast
 
 </h3>
 
-<p>
+<p data-i18n="about.fast.desc">
 
 Optimized for speed and user experience.
 
@@ -263,13 +285,13 @@ Optimized for speed and user experience.
 
 <i class="fa-solid fa-pen-ruler"></i>
 
-<h3>
+<h3 data-i18n="about.custom.title">
 
 Custom Design
 
 </h3>
 
-<p>
+<p data-i18n="about.custom.desc">
 
 Every website can be personalized for your business.
 
@@ -283,13 +305,13 @@ Every website can be personalized for your business.
 
 <section id="contact" class="contact">
 
-<h2>
+<h2 data-i18n="contact.title">
 
 Need a Website?
 
 </h2>
 
-<p>
+<p data-i18n="contact.subtitle">
 
 Let's build a modern website for your business.
 
@@ -301,7 +323,7 @@ Let's build a modern website for your business.
 
 <i class="fa-brands fa-whatsapp"></i>
 
-WhatsApp
+<span data-i18n="contact.whatsapp">WhatsApp</span>
 
 </a>
 
@@ -309,7 +331,7 @@ WhatsApp
 
 <i class="fa-solid fa-envelope"></i>
 
-Email
+<span data-i18n="contact.email">Email</span>
 
 </a>
 
@@ -319,7 +341,7 @@ Email
 
 <footer>
 
-<p>
+<p data-i18n="footer.text">
 
 © 2026 Amar Web Studio. All Rights Reserved.
 
