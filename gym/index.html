@@ -1,444 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>IRON PULSE FITNESS</title>
+<title>Forge Fitness</title>
+<meta name="description" content="Strength and conditioning gym. Small group training and open gym access.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-<body>
+<body data-fx="particles" data-fx-color="198,255,46" data-fx-color2="255,46,77">
 
 <header>
-
 <nav class="navbar">
-
-<div class="logo">
-
-IRON PULSE
-
-</div>
-
+<div class="logo">FORGE</div>
 <ul class="nav-links">
-
 <li><a href="#home">Home</a></li>
-
 <li><a href="#about">About</a></li>
-
-<li><a href="#plans">Plans</a></li>
-
-<li><a href="#trainers">Trainers</a></li>
-
+<li><a href="#programs">Programs</a></li>
+<li><a href="#gallery">Gym</a></li>
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
-<div class="menu-btn">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
-
+<a href="#contact" class="nav-cta">Free Trial</a>
+<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
 </nav>
-
 </header>
 
 <section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>
-
-NO PAIN.
-
-NO EXCUSES.
-
-</h1>
-
-<p>
-
-Train Hard • Stay Strong • Become Your Best
-
-</p>
-
-<a href="#plans" class="btn">
-
-Join Today
-
-</a>
-
+<div class="hero-inner">
+<span class="eyebrow">Strength &amp; Conditioning</span>
+<h1>TRAIN LIKE<br>YOU MEAN IT.</h1>
+<p>Small-group coaching, open gym access, and programming built around your actual numbers — not a generic plan.</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn">Start Free Trial</a>
+<a href="#programs" class="btn secondary">See Programs</a>
 </div>
-
+</div>
 </section>
 
 <section class="about" id="about">
-
 <div class="container">
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900">
-
+<div class="about-media" data-reveal>
+<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=80" alt="Gym training floor">
 </div>
-
-<div>
-
-<h2>
-
-WHY CHOOSE US
-
-</h2>
-
-<p>
-
-Professional coaches, modern equipment, flexible memberships and an inspiring atmosphere that helps you achieve your goals.
-
-</p>
-
+<div class="about-text" data-reveal>
+<span class="eyebrow">The Gym</span>
+<h2>Numbers you can track.</h2>
+<p>Forge is built for people who want to actually get stronger — every session is logged, every lift is tracked, and your coach adjusts the plan based on real data, not guesswork.</p>
+<p>Small class sizes mean real coaching, not just a playlist and a clock.</p>
+<div class="about-stats">
+<div><strong>12</strong><span>Max per class</span></div>
+<div><strong>340+</strong><span>Active members</span></div>
+<div><strong>4.9★</strong><span>Member rating</span></div>
 </div>
-
 </div>
-
+</div>
 </section>
 
-<section class="plans" id="plans">
-
-<h2>
-
-MEMBERSHIP PLANS
-
-</h2>
-
-<div class="cards">
-
+<section class="programs" id="programs">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Programs</span>
+<h2>Pick Your Track</h2>
+<p>All memberships include open gym access and one free assessment session.</p>
+</div>
+<div class="cards-grid" data-reveal>
 <div class="card">
-
-<h3>
-
-Basic
-
-</h3>
-
-<h1>
-
-$25
-
-</h1>
-
-<p>
-
-Gym Access
-
-</p>
-
-<p>
-
-Locker
-
-</p>
-
-<a href="#" class="btn">
-
-Choose
-
-</a>
-
+<i class="fa-solid fa-dumbbell"></i>
+<h3>Strength</h3>
+<p>Coached barbell programming, 3x/week, progressive overload tracked.</p>
+<span class="price">6,500 DZD/mo</span>
 </div>
-
-<div class="card premium">
-
-<h3>
-
-Premium
-
-</h3>
-
-<h1>
-
-$50
-
-</h1>
-
-<p>
-
-Everything Included
-
-</p>
-
-<p>
-
-Personal Trainer
-
-</p>
-
-<a href="#" class="btn">
-
-Choose
-
-</a>
-
-</div>
-
 <div class="card">
-
-<h3>
-
-Elite
-
-</h3>
-
-<h1>
-
-$75
-
-</h1>
-
-<p>
-
-VIP Access
-
-</p>
-
-<p>
-
-Nutrition Plan
-
-</p>
-
-<a href="#" class="btn">
-
-Choose
-
-</a>
-
+<i class="fa-solid fa-fire"></i>
+<h3>Conditioning</h3>
+<p>High-intensity small group classes built for engine and endurance.</p>
+<span class="price">5,500 DZD/mo</span>
 </div>
-
+<div class="card">
+<i class="fa-solid fa-person-running"></i>
+<h3>Open Gym</h3>
+<p>Unlimited access to the full floor, no class schedule required.</p>
+<span class="price">4,000 DZD/mo</span>
 </div>
-
+<div class="card">
+<i class="fa-solid fa-user-tie"></i>
+<h3>1-on-1 Coaching</h3>
+<p>Private programming and in-person coaching, twice weekly.</p>
+<span class="price">12,000 DZD/mo</span>
+</div>
+</div>
 </section>
 
-<section class="trainers" id="trainers">
-
-<h2>
-
-OUR TRAINERS
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=500">
-
-<h3>
-
-Alex Carter
-
-</h3>
-
-<p>
-
-Strength Coach
-
-</p>
-
+<section class="gallery" id="gallery">
+<div class="section-head" data-reveal>
+<span class="eyebrow">The Floor</span>
+<h2>Inside Forge</h2>
 </div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500">
-
-<h3>
-
-Emma Reed
-
-</h3>
-
-<p>
-
-Fitness Coach
-
-</p>
-
+<div class="gallery-grid" data-reveal data-lightbox>
+<figure><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80"><figcaption>Free Weights</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80"><figcaption>Group Class</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80"><figcaption>Racks</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80"><figcaption>Cardio</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80"><figcaption>Coaching</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1600881333168-2ef49b341f30?w=600&q=80"><figcaption>Floor</figcaption></figure>
 </div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500">
-
-<h3>
-
-Michael Lee
-
-</h3>
-
-<p>
-
-Bodybuilding
-
-</p>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="stats">
-
-<h2>
-
-OUR RESULTS
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h1 class="counter" data-target="2500">
-
-0
-
-</h1>
-
-<p>
-
-Members
-
-</p>
-
+<section class="testimonials">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Members</span>
+<h2>Real Progress</h2>
 </div>
-
-<div class="card">
-
-<h1 class="counter" data-target="18">
-
-0
-
-</h1>
-
-<p>
-
-Certified Coaches
-
-</p>
-
+<div class="testimonials-wrap" data-reveal>
+<div class="testimonial active">
+<div class="stars">★★★★★</div>
+<p>"Added 40kg to my deadlift in 6 months because someone was actually tracking my numbers."</p>
+<div class="author">— Yassine A.</div>
 </div>
-
-<div class="card">
-
-<h1 class="counter" data-target="98">
-
-0
-
-</h1>
-
-<p>
-
-Success %
-
-</p>
-
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Small classes mean the coach actually corrects your form. Game changer."</p>
+<div class="author">— Imane B.</div>
 </div>
-
-<div class="card">
-
-<h1 class="counter" data-target="24">
-
-0
-
-</h1>
-
-<p>
-
-Hours Open
-
-</p>
-
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Best gym culture in the city. No egos, just people working hard."</p>
+<div class="author">— Walid K.</div>
 </div>
-
 </div>
-
 </section>
 
 <section class="contact" id="contact">
-
-<h2>
-
-READY TO TRANSFORM?
-
-</h2>
-
-<p>
-
-Start your fitness journey today.
-
-</p>
-
-<div class="contact-buttons">
-
-<a href="#">
-
-<i class="fa-solid fa-phone"></i>
-
-Call
-
-</a>
-
-<a href="#">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
-
-<a href="#">
-
-<i class="fa-solid fa-location-dot"></i>
-
-Visit Us
-
-</a>
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Join</span>
+<h2>Start Your Free Trial</h2>
 </div>
-
+<div class="contact-grid" data-reveal>
+<div class="contact-info">
+<div class="row"><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><span>18 Boulevard Krim Belkacem, Algiers</span></div></div>
+<div class="row"><i class="fa-solid fa-clock"></i><div><strong>Hours</strong><span>Mon–Sat · 6:00am – 10:00pm</span></div></div>
+<div class="row"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+213 550 00 00 00</span></div></div>
+<div class="social-row">
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+</div>
+<form class="demo-form">
+<input type="text" placeholder="Your name" required>
+<input type="tel" placeholder="Phone number" required>
+<textarea placeholder="Training goal (strength, weight loss, general fitness...)"></textarea>
+<button type="submit">Claim Free Trial</button>
+</form>
+</div>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 Amar Web Studio. All Rights Reserved.
-
-</p>
-
+<div class="foot-logo">FORGE</div>
+<p>18 Boulevard Krim Belkacem, Algiers · Open 7 Days</p>
+<p class="credit">Template by <a href="#">Amar Web Studio</a> — demo content, not a real business.</p>
 </footer>
 
-<a href="#" class="floating">
-
-<i class="fa-solid fa-dumbbell"></i>
-
-</a>
+<a href="https://wa.me/213550030651" class="floating" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>

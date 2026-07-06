@@ -1,225 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Luxury Beauty Salon</title>
+<title>Salon Lumière</title>
+<meta name="description" content="Boutique beauty salon and spa. Hair, skin, and nails in a calm, private setting.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-<body>
+<body data-fx="particles" data-fx-color="255,110,199" data-fx-color2="139,107,255">
 
 <header>
-
 <nav class="navbar">
-
-<div class="logo">
-LUXE BEAUTY
-</div>
-
+<div class="logo">Lumière</div>
 <ul class="nav-links">
-
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#gallery">Gallery</a></li>
-<li><a href="#booking">Book</a></li>
-
+<li><a href="#contact">Contact</a></li>
 </ul>
-
-<div class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</div>
-
+<a href="#contact" class="nav-cta">Book Appointment</a>
+<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
 </nav>
-
 </header>
 
 <section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>Luxury Beauty.<br>Timeless Elegance.</h1>
-
-<p>
-
-Hair • Nails • Makeup • Spa
-
-Experience beauty like never before.
-
-</p>
-
-<a href="#booking" class="btn">
-Book Appointment
-</a>
-
+<div class="hero-inner">
+<span class="eyebrow">Boutique Salon &amp; Spa</span>
+<h1>Quiet luxury,<br>for your skin and hair.</h1>
+<p>A private, appointment-only studio for colour, cut, skin and nail care — never more than two clients at a time.</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn">Book Appointment</a>
+<a href="#services" class="btn secondary">Our Services</a>
 </div>
-
+</div>
 </section>
 
 <section class="about" id="about">
-
 <div class="container">
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900">
-
+<div class="about-media" data-reveal>
+<img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=900&q=80" alt="Salon interior">
 </div>
-
-<div>
-
-<h2>About Our Salon</h2>
-
-<p>
-
-Our salon offers luxury beauty services delivered by experienced professionals in a relaxing atmosphere.
-
-Every appointment is designed to help you look and feel your best.
-
-</p>
-
+<div class="about-text" data-reveal>
+<span class="eyebrow">Our Studio</span>
+<h2>Beauty, without the rush.</h2>
+<p>We keep the studio small on purpose — one stylist, one client, full attention. Every service starts with an unhurried consultation, not a rushed ten-minute slot.</p>
+<p>Our colourists trained in Paris and Milan; our skincare line is clean, fragrance-considerate, and suited to the local climate.</p>
+<div class="about-stats">
+<div><strong>2</strong><span>Clients at a time, max</span></div>
+<div><strong>8yr</strong><span>Average stylist experience</span></div>
+<div><strong>4.9★</strong><span>Client rating</span></div>
 </div>
-
 </div>
-
+</div>
 </section>
 
 <section class="services" id="services">
-
-<h2>Our Services</h2>
-
-<div class="cards">
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Services</span>
+<h2>Treatments &amp; Pricing</h2>
+<p>All services include a consultation and finishing touch-up.</p>
+</div>
+<div class="cards-grid" data-reveal>
 <div class="card">
-
 <i class="fa-solid fa-scissors"></i>
-
-<h3>Hair Styling</h3>
-
-<p>Professional cuts & styling.</p>
-
+<h3>Cut &amp; Style</h3>
+<p>Precision cut tailored to face shape and texture.</p>
+<span class="price">From 2,800 DZD</span>
 </div>
-
 <div class="card">
-
-<i class="fa-solid fa-hand-sparkles"></i>
-
-<h3>Nail Care</h3>
-
-<p>Luxury manicure & pedicure.</p>
-
+<i class="fa-solid fa-palette"></i>
+<h3>Colour &amp; Balayage</h3>
+<p>Full colour, root touch-up, or hand-painted balayage.</p>
+<span class="price">From 5,500 DZD</span>
 </div>
-
 <div class="card">
-
-<i class="fa-solid fa-wand-magic-sparkles"></i>
-
-<h3>Makeup</h3>
-
-<p>Bridal & special occasions.</p>
-
-</div>
-
-<div class="card">
-
 <i class="fa-solid fa-spa"></i>
-
-<h3>Spa</h3>
-
-<p>Relaxing facial & massage.</p>
-
+<h3>Facial Treatment</h3>
+<p>Deep-cleanse facial with gentle exfoliation and mask.</p>
+<span class="price">From 4,200 DZD</span>
 </div>
-
+<div class="card">
+<i class="fa-solid fa-hand-sparkles"></i>
+<h3>Manicure &amp; Pedicure</h3>
+<p>Classic or gel finish, includes hand and foot massage.</p>
+<span class="price">From 2,200 DZD</span>
 </div>
-
+</div>
 </section>
 
 <section class="gallery" id="gallery">
-
-<h2>Beauty Gallery</h2>
-
-<div class="gallery-grid">
-
-<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=700">
-
-<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700">
-
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700">
-
-<img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=700">
-
-<img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700">
-
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700">
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Gallery</span>
+<h2>Recent Work</h2>
 </div>
-
+<div class="gallery-grid" data-reveal data-lightbox>
+<figure><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=600&q=80"><figcaption>Balayage</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80"><figcaption>Studio</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?w=600&q=80"><figcaption>Manicure</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?w=600&q=80"><figcaption>Facial</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1470259078422-826894b933aa?w=600&q=80"><figcaption>Styling</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80"><figcaption>Finish</figcaption></figure>
+</div>
 </section>
 
-<section class="booking" id="booking">
-
-<h2>Book Your Appointment</h2>
-
-<p>
-
-Open Monday - Sunday
-
-09:00 AM - 08:00 PM
-
-</p>
-
-<div class="contact-buttons">
-
-<a href="#">
-<i class="fa-brands fa-whatsapp"></i>
-WhatsApp
-</a>
-
-<a href="#">
-<i class="fa-solid fa-phone"></i>
-Call Now
-</a>
-
-<a href="#">
-<i class="fa-brands fa-instagram"></i>
-Instagram
-</a>
-
+<section class="testimonials">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Clients</span>
+<h2>What They Say</h2>
 </div>
+<div class="testimonials-wrap" data-reveal>
+<div class="testimonial active">
+<div class="stars">★★★★★</div>
+<p>"First salon where I didn't feel rushed out the door. My colour has never looked better."</p>
+<div class="author">— Amina R.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Small, private, and genuinely relaxing. Worth every dinar."</p>
+<div class="author">— Sofia T.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"The facial completely reset my skin before my wedding. Can't recommend enough."</p>
+<div class="author">— Meriem H.</div>
+</div>
+</div>
+</section>
 
+<section class="contact" id="contact">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Book</span>
+<h2>Reserve Your Slot</h2>
+</div>
+<div class="contact-grid" data-reveal>
+<div class="contact-info">
+<div class="row"><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><span>7 Rue Ahmed Ouaked, Algiers</span></div></div>
+<div class="row"><i class="fa-solid fa-clock"></i><div><strong>Hours</strong><span>Tue–Sun · 9:00am – 7:00pm, by appointment</span></div></div>
+<div class="row"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+213 550 00 00 00</span></div></div>
+<div class="social-row">
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+</div>
+</div>
+<form class="demo-form">
+<input type="text" placeholder="Your name" required>
+<input type="text" placeholder="Preferred service" required>
+<textarea placeholder="Preferred day &amp; time"></textarea>
+<button type="submit">Request Booking</button>
+</form>
+</div>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 Amar Web Studio. All Rights Reserved.
-
-</p>
-
+<div class="foot-logo">Lumière</div>
+<p>7 Rue Ahmed Ouaked, Algiers · By Appointment</p>
+<p class="credit">Template by <a href="#">Amar Web Studio</a> — demo content, not a real business.</p>
 </footer>
 
-<a href="#" class="floating">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
+<a href="https://wa.me/213550030651" class="floating" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>

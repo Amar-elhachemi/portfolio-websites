@@ -1,226 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Restaurant</title>
+<title>Auguste — Modern French Dining</title>
+<meta name="description" content="A nine-table dining room. One seasonal tasting menu, served over three unhurried hours.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
+<body data-fx="particles" data-fx-color="201,160,77" data-fx-color2="92,28,38">
 
-<body>
+<div class="grain"></div>
 
-<header>
-
+<header id="siteHeader">
 <nav class="navbar">
-
-<div class="logo">
-Restaurant
-</div>
-
+<div class="logo">AUGUSTE</div>
 <ul class="nav-links">
 <li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
+<li><a href="#philosophy">Philosophy</a></li>
 <li><a href="#menu">Menu</a></li>
 <li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#reserve">Reserve</a></li>
 </ul>
-
-<div class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</div>
-
+<a href="#reserve" class="nav-cta">Reserve a Table</a>
+<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
 </nav>
-
 </header>
 
 <section class="hero" id="home">
-
+<div class="hero-media">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80" alt="">
+<div class="hero-overlay"></div>
+</div>
 <div class="hero-content">
-
-<h1>Authentic Flavors.<br>Unforgettable Moments.</h1>
-
-<p>
-Fresh ingredients, talented chefs, and unforgettable dining experiences every day.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#menu" class="btn">View Menu</a>
-
-<a href="#contact" class="btn secondary">Book a Table</a>
-
+<div class="rule" data-reveal="fade"></div>
+<span class="eyebrow" data-reveal="fade">Modern French · Est. 2016</span>
+<h1 data-reveal="fade">Dinner,<br><em>the slow way.</em></h1>
+<p data-reveal="fade">Nine tables. One seasonal menu. Served over three unhurried hours, every night we're open.</p>
+<div class="hero-actions" data-reveal="fade">
+<a href="#reserve" class="btn">Reserve a Table</a>
+<a href="#menu" class="btn ghost">View Tonight's Menu</a>
 </div>
-
 </div>
-
+<div class="scroll-cue"><span></span></div>
 </section>
 
-<section class="about" id="about">
-
-<div class="container">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900" alt="Restaurant">
-
+<section class="philosophy" id="philosophy">
+<div class="philosophy-grid">
+<div class="philosophy-text" data-reveal>
+<span class="eyebrow">Our Philosophy</span>
+<p class="lede"><span class="dropcap">W</span>e serve one menu a night, to nine tables, because that's how many a kitchen can cook properly without rushing. Chef Amine trained in Lyon before coming home to open a room built around restraint rather than spectacle.</p>
+<p>Ingredients arrive from three farms we visit ourselves. The wine list is short — twenty-two bottles, chosen to match the menu course by course, not the other way around.</p>
+<div class="stat-row">
+<div><strong>9</strong><span>Tables, no more</span></div>
+<div><strong>5</strong><span>Courses, one price</span></div>
+<div><strong>2016</strong><span>Since</span></div>
 </div>
-
-<div class="about-text">
-
-<h2>About Our Restaurant</h2>
-
-<p>
-
-Our restaurant combines fresh local ingredients with modern cooking techniques to create unforgettable meals.
-
-Whether you're here for lunch, dinner, or a family celebration, we promise exceptional service and delicious food.
-
-</p>
-
 </div>
-
+<div class="philosophy-media" data-reveal>
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80" alt="Chef plating a dish">
 </div>
-
+</div>
 </section>
 
-<section class="menu" id="menu">
-
-<h2>Our Signature Dishes</h2>
-
-<div class="cards">
-
-<div class="card">
-<i class="fa-solid fa-burger"></i>
-<h3>Classic Burger</h3>
-<p>Fresh beef, cheese & homemade sauce.</p>
+<section class="tasting-menu" id="menu">
+<div class="menu-intro" data-reveal>
+<span class="eyebrow">Tonight's Table</span>
+<h2>The Tasting Menu</h2>
+<p>Changes with the market, roughly monthly. This is what's being served this week.</p>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-pizza-slice"></i>
-<h3>Italian Pizza</h3>
-<p>Stone baked with premium ingredients.</p>
+<div class="courses">
+
+<div class="course" data-reveal>
+<div class="course-num">I</div>
+<div class="course-body">
+<span class="course-tag">To Begin</span>
+<h3>Beetroot, Goat Curd, Toasted Hazelnut</h3>
+<p>Slow-roasted heirloom beets, whipped curd, brown butter hazelnut crumble.</p>
+</div>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-drumstick-bite"></i>
-<h3>BBQ Chicken</h3>
-<p>Perfectly grilled with smoky flavor.</p>
+<div class="course" data-reveal>
+<div class="course-num">II</div>
+<div class="course-body">
+<span class="course-tag">Sea</span>
+<h3>Scallop, Brown Butter, Yuzu</h3>
+<p>Hand-dived scallop seared in brown butter, yuzu emulsion, sea herbs.</p>
+</div>
 </div>
 
-<div class="card">
-<i class="fa-solid fa-utensils"></i>
-<h3>Chef Special</h3>
-<p>A unique dish prepared daily.</p>
+<div class="course" data-reveal>
+<div class="course-num">III</div>
+<div class="course-body">
+<span class="course-tag">Between</span>
+<h3>Leek, Ash, Cultured Cream</h3>
+<p>Charred leek, burnt-leek ash, cultured cream, a single drop of aged sherry vinegar.</p>
+</div>
+</div>
+
+<div class="course" data-reveal>
+<div class="course-num">IV</div>
+<div class="course-body">
+<span class="course-tag">Main</span>
+<h3>Duck Breast, Fig, Jus</h3>
+<p>Dry-aged duck breast, roasted fig, reduction of its own jus over three days.</p>
+</div>
+</div>
+
+<div class="course" data-reveal>
+<div class="course-num">V</div>
+<div class="course-body">
+<span class="course-tag">To Finish</span>
+<h3>Dark Chocolate, Olive Oil, Salt</h3>
+<p>70% single-origin chocolate, first-press olive oil, flaked sea salt.</p>
+</div>
 </div>
 
 </div>
 
+<div class="menu-price" data-reveal>
+<div>
+<strong>Five-Course Tasting</strong>
+<span>Vegetarian version available on request</span>
+</div>
+<div class="price-tag">6,800 DZD</div>
+<div class="pairing">+ 2,400 DZD wine pairing</div>
+</div>
 </section>
 
 <section class="gallery" id="gallery">
-
-<h2>Food Gallery</h2>
-
-<div class="gallery-grid">
-
-<img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600">
-
-<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600">
-
-<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600">
-
-<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600">
-
-<img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600">
-
-<img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600">
-
+<div class="menu-intro" data-reveal>
+<span class="eyebrow">Gallery</span>
+<h2>The Room &amp; The Plate</h2>
 </div>
-
+<div class="editorial-grid" data-reveal data-lightbox>
+<figure class="g-large"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1000&q=80"><figcaption>The Dining Room</figcaption></figure>
+<figure class="g-tall"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=700&q=80"><figcaption>Wine</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80"><figcaption>Table Setting</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=700&q=80"><figcaption>Dessert</figcaption></figure>
+<figure class="g-wide"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1000&q=80"><figcaption>Evening Service</figcaption></figure>
+</div>
 </section>
 
-<section class="menu">
-
-<h2>Why Choose Us</h2>
-
-<div class="cards">
-
-<div class="card">
-<i class="fa-solid fa-seedling"></i>
-<h3>Fresh Ingredients</h3>
-<p>Only premium local products.</p>
+<section class="quote-section">
+<div class="quote-mark">"</div>
+<div class="testimonials-wrap" data-reveal>
+<div class="testimonial active">
+<p>The kind of dinner you plan an evening around. Every course had a reason to exist.</p>
+<div class="author">Nadia F.</div>
 </div>
-
-<div class="card">
-<i class="fa-solid fa-user-chef"></i>
-<h3>Expert Chefs</h3>
-<p>Years of culinary experience.</p>
+<div class="testimonial">
+<p>Nine tables means it never feels rushed. Best duck I've had in this city.</p>
+<div class="author">Karim S.</div>
 </div>
-
-<div class="card">
-<i class="fa-solid fa-star"></i>
-<h3>Top Rated</h3>
-<p>Loved by hundreds of customers.</p>
+<div class="testimonial">
+<p>Book two weeks ahead — it's worth the wait, every time.</p>
+<div class="author">Elise D.</div>
 </div>
-
-<div class="card">
-<i class="fa-solid fa-heart"></i>
-<h3>Family Friendly</h3>
-<p>A warm atmosphere for everyone.</p>
 </div>
-
-</div>
-
 </section>
 
-<section class="contact" id="contact">
-
-<h2>Reserve Your Table</h2>
-
-<p>
-Open Every Day • 11:00 AM – 11:00 PM
-</p>
-
-<div class="contact-buttons">
-
-<a href="#"><i class="fa-solid fa-phone"></i> Call</a>
-
-<a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-
-<a href="#"><i class="fa-solid fa-location-dot"></i> Directions</a>
-
+<section class="reserve" id="reserve">
+<div class="reserve-grid">
+<div class="reserve-info" data-reveal>
+<span class="eyebrow">Reservations</span>
+<h2>Book Your Table</h2>
+<p>One seating a night. We hold tables for fifteen minutes past your booking time.</p>
+<div class="info-rows">
+<div class="row"><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><span>4 Rue Didouche Mourad, Algiers</span></div></div>
+<div class="row"><i class="fa-solid fa-clock"></i><div><strong>Service</strong><span>Tue–Sun · 7:00pm – 11:00pm, one seating</span></div></div>
+<div class="row"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+213 550 00 00 00</span></div></div>
 </div>
-
+<div class="social-row">
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+</div>
+</div>
+<form class="demo-form" data-reveal>
+<input type="text" placeholder="Your name" required>
+<input type="text" placeholder="Party size &amp; preferred date" required>
+<textarea placeholder="Dietary notes or requests"></textarea>
+<button type="submit">Request Reservation</button>
+</form>
+</div>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 Amar Web Studio. All Rights Reserved.
-
-</p>
-
+<div class="foot-logo">AUGUSTE</div>
+<p>4 Rue Didouche Mourad, Algiers · Reservations Recommended</p>
+<p class="credit">Template by <a href="#">Amar Web Studio</a> — demo content, not a real business.</p>
 </footer>
 
-<a href="#" class="floating">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
+<a href="https://wa.me/213550030651" class="floating" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script src="script.js"></script>
-
 </body>
 </html>

@@ -1,220 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LUMIÈRE — Photography Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Reyes Photography</title>
+<meta name="description" content="Portrait, wedding, and editorial photographer. Available worldwide.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
+<body data-fx="particles" data-fx-color="255,176,32" data-fx-color2="232,228,218">
 
-<body>
-  <div class="grain"></div>
-  <div class="cursor-dot"></div>
-  <div class="cursor-ring"></div>
+<header>
+<nav class="navbar">
+<div class="logo">A. Reyes</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Portfolio</a></li>
+<li><a href="#services">Packages</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a href="#contact" class="nav-cta">Check Availability</a>
+<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
+</nav>
+</header>
 
-  <header class="header">
-    <nav class="navbar">
-      <a href="#home" class="logo">LUMIÈRE<span>®</span></a>
+<section class="hero" id="home">
+<div class="hero-inner">
+<span class="eyebrow">Portrait · Wedding · Editorial</span>
+<h1>Frames that hold<br>still, on purpose.</h1>
+<p>Available for weddings, editorial shoots, and portrait sessions worldwide. Based in Algiers, booking internationally.</p>
+<div class="hero-buttons">
+<a href="#gallery" class="btn">View Portfolio</a>
+<a href="#contact" class="btn secondary">Check Availability</a>
+</div>
+</div>
+</section>
 
-      <div class="nav-links">
-        <a href="#work">Selected Work</a>
-        <a href="#about">The Studio</a>
-        <a href="#contact">Contact</a>
-      </div>
+<section class="about" id="about">
+<div class="container">
+<div class="about-media" data-reveal>
+<img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=900&q=80" alt="Photographer at work">
+</div>
+<div class="about-text" data-reveal>
+<span class="eyebrow">About</span>
+<h2>Ten years behind the camera.</h2>
+<p>I started shooting weddings in 2015 and never stopped chasing natural light. My approach stays out of the way — documentary-first, directed only when it earns the frame.</p>
+<p>Every booking includes a full-resolution digital gallery, delivered within three weeks.</p>
+<div class="about-stats">
+<div><strong>10yr</strong><span>Shooting professionally</span></div>
+<div><strong>180+</strong><span>Weddings covered</span></div>
+<div><strong>12</strong><span>Countries shot in</span></div>
+</div>
+</div>
+</div>
+</section>
 
-      <a href="#contact" class="nav-cta">Book a Session <span>↗</span></a>
+<section class="gallery" id="gallery">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Selected Work</span>
+<h2>Portfolio</h2>
+</div>
+<div class="gallery-grid" data-reveal data-lightbox>
+<figure><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80"><figcaption>01 — Wedding</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80"><figcaption>02 — Portrait</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80"><figcaption>03 — Editorial</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1583939411619-11534e18ba58?w=600&q=80"><figcaption>04 — Wedding</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&q=80"><figcaption>05 — Portrait</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80"><figcaption>06 — Editorial</figcaption></figure>
+</div>
+</section>
 
-      <button class="menu-btn" aria-label="Open navigation">
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
+<section class="services" id="services">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Packages</span>
+<h2>Booking Options</h2>
+<p>Travel fees apply outside Algiers — ask for a custom quote.</p>
+</div>
+<div class="cards-grid" data-reveal>
+<div class="card">
+<i class="fa-solid fa-camera"></i>
+<h3>Portrait Session</h3>
+<p>1 hour, one location, 30 edited images delivered.</p>
+<span class="price">15,000 DZD</span>
+</div>
+<div class="card">
+<i class="fa-solid fa-rings-wedding"></i>
+<h3>Wedding — Half Day</h3>
+<p>6 hours coverage, 400+ edited images, online gallery.</p>
+<span class="price">70,000 DZD</span>
+</div>
+<div class="card">
+<i class="fa-solid fa-champagne-glasses"></i>
+<h3>Wedding — Full Day</h3>
+<p>10 hours coverage, second shooter, printed album.</p>
+<span class="price">130,000 DZD</span>
+</div>
+</div>
+</section>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-image"></div>
-      <div class="hero-overlay"></div>
+<section class="testimonials">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Clients</span>
+<h2>From The Gallery Deliveries</h2>
+</div>
+<div class="testimonials-wrap" data-reveal>
+<div class="testimonial active">
+<div class="stars">★★★★★</div>
+<p>"He disappeared into the background all day and somehow caught every real moment."</p>
+<div class="author">— Yasmine &amp; Karim</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Portraits came back looking like something out of a magazine, not a studio session."</p>
+<div class="author">— Dalia F.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Gallery delivered early, every single photo usable. Rare for a wedding shoot."</p>
+<div class="author">— Omar T.</div>
+</div>
+</div>
+</section>
 
-      <div class="hero-top reveal">
-        <p>Independent Photography Studio</p>
-        <p>Paris · Worldwide</p>
-      </div>
+<section class="contact" id="contact">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Booking</span>
+<h2>Check Availability</h2>
+</div>
+<div class="contact-grid" data-reveal>
+<div class="contact-info">
+<div class="row"><i class="fa-solid fa-location-dot"></i><div><strong>Based in</strong><span>Algiers · Available for travel</span></div></div>
+<div class="row"><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><span>hello@adamreyes.photo</span></div></div>
+<div class="row"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+213 550 00 00 00</span></div></div>
+<div class="social-row">
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+</div>
+</div>
+<form class="demo-form">
+<input type="text" placeholder="Your name" required>
+<input type="text" placeholder="Event date &amp; type" required>
+<textarea placeholder="Tell me about your event"></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
+</section>
 
-      <div class="hero-content">
-        <p class="eyebrow reveal">Visual stories, beautifully told</p>
+<footer>
+<div class="foot-logo">A. Reyes</div>
+<p>Based in Algiers · Available Worldwide</p>
+<p class="credit">Template by <a href="#">Amar Web Studio</a> — demo content, not a real business.</p>
+</footer>
 
-        <h1 class="hero-title">
-          <span class="reveal-line">Frames that</span>
-          <span class="reveal-line italic">feel like</span>
-          <span class="reveal-line">forever.</span>
-        </h1>
+<a href="https://wa.me/213550030651" class="floating" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-        <div class="hero-bottom reveal">
-          <p>Portraits, weddings, editorials<br />and the moments in between.</p>
-          <a href="#work" class="circle-link">
-            <span>Explore<br />the work</span>
-            <b>↓</b>
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-number">01 / 05</div>
-      <div class="hero-scroll">Scroll to discover <span></span></div>
-    </section>
-
-    <section class="intro section-padding" id="about">
-      <div class="intro-label reveal">[ About the studio ]</div>
-
-      <div class="intro-copy">
-        <h2 class="reveal">
-          Photography is not about<br />
-          what you <em>see.</em> It is about<br />
-          what you <em>remember.</em>
-        </h2>
-
-        <div class="intro-text reveal">
-          <p>
-            LUMIÈRE is a visual studio for people who want more than a photograph.
-            We capture the electricity in a glance, the quiet between words, and
-            every imperfectly perfect moment worth keeping.
-          </p>
-          <a href="#contact" class="text-link">Meet the photographer <span>→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery" id="work">
-      <div class="gallery-heading section-padding">
-        <div class="intro-label reveal">[ Selected work ]</div>
-        <h2 class="reveal">A collection of<br /><em>real moments.</em></h2>
-      </div>
-
-      <div class="gallery-grid">
-        <article class="gallery-item large reveal-image">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1500&q=90" alt="Couple embracing at a wedding" />
-          <div class="gallery-meta">
-            <span>01</span>
-            <h3>After the Vows</h3>
-            <p>Wedding · 2026</p>
-          </div>
-        </article>
-
-        <article class="gallery-item portrait reveal-image">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=90" alt="Editorial portrait" />
-          <div class="gallery-meta">
-            <span>02</span>
-            <h3>Soft Focus</h3>
-            <p>Portrait · 2026</p>
-          </div>
-        </article>
-
-        <article class="gallery-item landscape reveal-image">
-          <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1500&q=90" alt="Woman in a field at sunset" />
-          <div class="gallery-meta">
-            <span>03</span>
-            <h3>Golden Hour</h3>
-            <p>Editorial · 2026</p>
-          </div>
-        </article>
-
-        <article class="gallery-item portrait second reveal-image">
-          <img src="https://images.unsplash.com/photo-1496440737103-cd596325d314?auto=format&fit=crop&w=1000&q=90" alt="Fashion portrait" />
-          <div class="gallery-meta">
-            <span>04</span>
-            <h3>In Bloom</h3>
-            <p>Fashion · 2026</p>
-          </div>
-        </article>
-
-        <article class="gallery-item wide reveal-image">
-          <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1600&q=90" alt="Wedding celebration" />
-          <div class="gallery-meta">
-            <span>05</span>
-            <h3>All the Feeling</h3>
-            <p>Wedding · 2026</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="gallery-footer section-padding reveal">
-        <p>Every image begins with a feeling.</p>
-        <a href="#contact" class="text-link">View full portfolio <span>→</span></a>
-      </div>
-    </section>
-
-    <section class="statement">
-      <div class="statement-image"></div>
-      <div class="statement-content">
-        <p class="eyebrow reveal">The LUMIÈRE experience</p>
-        <h2 class="reveal">Your story,<br /><em>in its best light.</em></h2>
-        <p class="reveal">
-          No awkward poses. No forced smiles. Just a calm, intentional space
-          where you can be completely yourself.
-        </p>
-        <a href="#contact" class="light-btn reveal">Start your story <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="services section-padding">
-      <div class="intro-label reveal">[ What we capture ]</div>
-
-      <div class="service-list">
-        <a href="#contact" class="service reveal">
-          <span>01</span>
-          <h3>Weddings</h3>
-          <p>Honest, artful documentation of your entire day.</p>
-          <b>↗</b>
-        </a>
-
-        <a href="#contact" class="service reveal">
-          <span>02</span>
-          <h3>Portraits</h3>
-          <p>Portraiture that feels as alive as you are.</p>
-          <b>↗</b>
-        </a>
-
-        <a href="#contact" class="service reveal">
-          <span>03</span>
-          <h3>Editorial</h3>
-          <p>Visual direction for brands, artists, and ideas.</p>
-          <b>↗</b>
-        </a>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-image"></div>
-      <div class="contact-overlay"></div>
-
-      <div class="contact-content">
-        <p class="eyebrow reveal">Let’s make something unforgettable</p>
-        <h2 class="reveal">Ready when<br /><em>you are.</em></h2>
-        <a href="mailto:hello@lumiere-studio.com" class="contact-email reveal">
-          hello@lumiere-studio.com <span>↗</span>
-        </a>
-      </div>
-
-      <div class="contact-details reveal">
-        <p>Paris, France</p>
-        <p>Available worldwide</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <a href="#home" class="logo">LUMIÈRE<span>®</span></a>
-    <p>© 2026 LUMIÈRE Studio. Made for beautiful memories.</p>
-    <div>
-      <a href="#">Instagram</a>
-      <a href="#">Pinterest</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,20 +1,20 @@
 :root{
---bg:#0d0710;
---bg-alt:#150c1c;
---surface:#1c1024;
---surface-2:#24142e;
---text:#f8eefc;
---muted:#b9a7c4;
---accent:#ff6ec7;
---accent-2:#8b6bff;
---border:#2c1a38;
---radius:26px;
---on-accent:#0d0710;
---font-display:'Unbounded', sans-serif;
---font-body:'Poppins', sans-serif;
---glow:255,110,199;
---glow-2:139,107,255;
---grid-line:rgba(255,110,199,.05);
+--bg:#f4fbfb;
+--bg-alt:#e9f6f6;
+--surface:#ffffff;
+--surface-2:#f0fbfb;
+--text:#0d2b2e;
+--muted:#5a7679;
+--accent:#00b8d9;
+--accent-2:#22c3a5;
+--border:#d6ecec;
+--radius:20px;
+--on-accent:#ffffff;
+--font-display:'Space Grotesk', sans-serif;
+--font-body:'Inter', sans-serif;
+--glow:0,184,217;
+--glow-2:34,195,165;
+--grid-line:rgba(0,184,217,.10);
 }
 
 /* =====================================================
@@ -617,3 +617,14 @@ section{padding:90px 6%;}
 .floating{width:52px;height:52px;font-size:22px;bottom:20px;right:20px;}
 .back-to-top{bottom:20px;left:20px;}
 }
+
+/* =====================================================
+   SITE-SPECIFIC OVERRIDES
+===================================================== */
+.light-fx header.scrolled{background:rgba(255,255,255,.7);box-shadow:0 1px 0 rgba(0,184,217,.15),0 20px 40px rgba(13,43,46,.08);}
+.light-fx .nav-links{}
+@media(max-width:960px){.light-fx .nav-links{background:rgba(255,255,255,.98);box-shadow:-10px 0 40px rgba(13,43,46,.12);}}
+.light-fx .gallery-grid figure::after{background:linear-gradient(180deg, transparent 55%, rgba(13,43,46,.45));}
+.light-fx .fx-canvas{opacity:.35;}
+.light-fx ::-webkit-scrollbar-track{background:#eaf6f6;}
+.light-fx .about-media::after{background:linear-gradient(180deg, transparent 55%, rgba(13,43,46,.35));}

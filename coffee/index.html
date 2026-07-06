@@ -1,220 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Coffee House</title>
+<title>Ember Coffee Roasters</title>
+<meta name="description" content="Small-batch coffee roastery and café. Locally roasted, perfectly brewed.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-<body>
+<body data-fx="particles" data-fx-color="255,106,61" data-fx-color2="255,189,89">
 
 <header>
-
 <nav class="navbar">
-
-<div class="logo">
-Coffee House
-</div>
-
+<div class="logo">Ember<span>.</span></div>
 <ul class="nav-links">
-
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#menu">Menu</a></li>
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
-<div class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</div>
-
+<a href="#contact" class="nav-cta">Order Ahead</a>
+<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
 </nav>
-
 </header>
 
-
 <section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>Locally Roasted.<br>Perfectly Brewed.</h1>
-
-<p>
-Premium specialty coffee crafted with passion.
-Fresh beans. Cozy atmosphere. Every cup matters.
-</p>
-
+<div class="hero-inner">
+<span class="eyebrow">Small-Batch Roastery · Est. 2019</span>
+<h1>Roasted slow.<br>Poured with care.</h1>
+<p>We roast in 12kg batches twice a week, so every cup is a few days from the drum, not a few months from a warehouse.</p>
 <div class="hero-buttons">
-
 <a href="#menu" class="btn">View Menu</a>
-
-<a href="#contact" class="btn secondary">Visit Us</a>
-
+<a href="#contact" class="btn secondary">Find Us</a>
 </div>
-
 </div>
-
 </section>
-
 
 <section class="about" id="about">
-
 <div class="container">
-
-<div class="about-image">
-
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900" alt="Coffee">
-
+<div class="about-media" data-reveal>
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80" alt="Barista pouring coffee">
 </div>
-
-<div class="about-text">
-
-<h2>About Us</h2>
-
-<p>
-
-Every cup tells a story.
-
-Our café is built around freshly roasted beans,
-beautiful interiors and unforgettable coffee experiences.
-
-Whether you're working, meeting friends,
-or relaxing with a book,
-there's always a place waiting for you.
-
-</p>
-
+<div class="about-text" data-reveal>
+<span class="eyebrow">Our Story</span>
+<h2>Coffee is a craft, not a commodity.</h2>
+<p>Ember started as a single roasting drum in a garage. Today we still buy direct from three family farms, cup every new lot blind, and roast only what we'll sell within two weeks.</p>
+<p>No syrups, no shortcuts — just well-sourced beans, dialed-in extraction, and a room that feels like someone's front porch.</p>
+<div class="about-stats">
+<div><strong>3</strong><span>Direct-trade farms</span></div>
+<div><strong>48hr</strong><span>Roast-to-cup window</span></div>
+<div><strong>4.9★</strong><span>Average rating</span></div>
 </div>
-
 </div>
-
+</div>
 </section>
-
 
 <section class="menu" id="menu">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Menu</span>
+<h2>What's Brewing</h2>
+<p>A short menu, done properly. Ask your barista for today's single-origin filter.</p>
+</div>
 
-<h2>Our Favorites</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-mug-hot"></i>
-
+<div class="menu-list" data-reveal>
+<div class="menu-group">
 <h3>Espresso</h3>
-
-<p>Rich and bold.</p>
-
+<div class="menu-item"><span class="name">Espresso</span><span class="fill"></span><span class="price">280 DZD</span></div>
+<div class="menu-item"><span class="name">Cortado</span><span class="fill"></span><span class="price">340 DZD</span></div>
+<div class="menu-item"><span class="name">Flat White</span><span class="fill"></span><span class="price">380 DZD</span></div>
+<div class="menu-item"><span class="name">Cappuccino</span><span class="fill"></span><span class="price">380 DZD</span></div>
 </div>
-
-<div class="card">
-
-<i class="fa-solid fa-mug-hot"></i>
-
-<h3>Flat White</h3>
-
-<p>Perfect creamy balance.</p>
-
+<div class="menu-group">
+<h3>Filter &amp; Cold</h3>
+<div class="menu-item"><span class="name">Pour Over</span><span class="fill"></span><span class="price">420 DZD</span></div>
+<div class="menu-item"><span class="name">Cold Brew</span><span class="fill"></span><span class="price">400 DZD</span></div>
+<div class="menu-item"><span class="name">Iced Latte</span><span class="fill"></span><span class="price">400 DZD</span></div>
 </div>
-
-<div class="card">
-
-<i class="fa-solid fa-glass-water"></i>
-
-<h3>Cold Brew</h3>
-
-<p>18 hour extraction.</p>
-
+<div class="menu-group">
+<h3>From the Case</h3>
+<div class="menu-item"><span class="name">Butter Croissant</span><span class="fill"></span><span class="price">220 DZD</span></div>
+<div class="menu-item"><span class="name">Banana Bread</span><span class="fill"></span><span class="price">250 DZD</span></div>
 </div>
-
-<div class="card">
-
-<i class="fa-solid fa-filter"></i>
-
-<h3>Pour Over</h3>
-
-<p>Hand crafted perfection.</p>
-
 </div>
-
-</div>
-
 </section>
-
 
 <section class="gallery" id="gallery">
-
-<h2>Gallery</h2>
-
-<div class="gallery-grid">
-
-<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600">
-
-<img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600">
-
-<img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600">
-
-<img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600">
-
-<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600">
-
-<img src="https://images.unsplash.com/photo-1494314671902-399b18174975?w=600">
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Gallery</span>
+<h2>Inside The Roastery</h2>
 </div>
-
+<div class="gallery-grid" data-reveal data-lightbox>
+<figure><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80"><figcaption>Bar</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&q=80"><figcaption>Roast</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80"><figcaption>Pour</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&q=80"><figcaption>Beans</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80"><figcaption>Seating</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1494314671902-399b18174975?w=600&q=80"><figcaption>Latte Art</figcaption></figure>
+</div>
 </section>
 
+<section class="testimonials">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Reviews</span>
+<h2>From Our Regulars</h2>
+</div>
+<div class="testimonials-wrap" data-reveal>
+<div class="testimonial active">
+<div class="stars">★★★★★</div>
+<p>"Best flat white in Hydra, hands down. I can taste the difference from a chain café."</p>
+<div class="author">— Sarah M.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"They actually know the farm their beans come from. That's rare."</p>
+<div class="author">— Yacine B.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"My daily stop before work. Quiet, warm, and the cold brew is unreal."</p>
+<div class="author">— Lina K.</div>
+</div>
+</div>
+</section>
 
 <section class="contact" id="contact">
-
-<h2>Visit Us</h2>
-
-<p>Hydra • Algiers</p>
-
-<div class="contact-buttons">
-
-<a href="#"><i class="fa-solid fa-phone"></i> Call</a>
-
-<a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-
-<a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Visit</span>
+<h2>Come Say Hello</h2>
 </div>
-
+<div class="contact-grid" data-reveal>
+<div class="contact-info">
+<div class="row"><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><span>12 Rue des Frères, Hydra, Algiers</span></div></div>
+<div class="row"><i class="fa-solid fa-clock"></i><div><strong>Hours</strong><span>Mon–Sat · 7:30am – 8:00pm</span></div></div>
+<div class="row"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+213 550 00 00 00</span></div></div>
+<div class="social-row">
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+</div>
+</div>
+<form class="demo-form">
+<input type="text" placeholder="Your name" required>
+<input type="email" placeholder="Email address" required>
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
 </section>
 
-
 <footer>
-
-<p>
-
-© 2026 Amar Web Studio. All Rights Reserved.
-
-</p>
-
+<div class="foot-logo">Ember<span style="color:var(--accent)">.</span></div>
+<p>12 Rue des Frères, Hydra, Algiers · Open Daily</p>
+<p class="credit">Template by <a href="#">Amar Web Studio</a> — demo content, not a real business.</p>
 </footer>
 
-<a href="#" class="floating">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-</a>
+<a href="https://wa.me/213550030651" class="floating" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script src="script.js"></script>
-
 </body>
 </html>

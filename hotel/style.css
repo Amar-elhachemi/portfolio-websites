@@ -1,20 +1,20 @@
 :root{
---bg:#0d0710;
---bg-alt:#150c1c;
---surface:#1c1024;
---surface-2:#24142e;
---text:#f8eefc;
---muted:#b9a7c4;
---accent:#ff6ec7;
---accent-2:#8b6bff;
---border:#2c1a38;
---radius:26px;
---on-accent:#0d0710;
---font-display:'Unbounded', sans-serif;
---font-body:'Poppins', sans-serif;
---glow:255,110,199;
---glow-2:139,107,255;
---grid-line:rgba(255,110,199,.05);
+--bg:#0a0906;
+--bg-alt:#120f0a;
+--surface:#181410;
+--surface-2:#201a13;
+--text:#f6f1e6;
+--muted:#b3a891;
+--accent:#d4af6a;
+--accent-2:#4fd1c5;
+--border:#2a2318;
+--radius:22px;
+--on-accent:#0a0906;
+--font-display:'Cormorant Garamond', serif;
+--font-body:'Inter', sans-serif;
+--glow:212,175,106;
+--glow-2:79,209,197;
+--grid-line:rgba(212,175,106,.06);
 }
 
 /* =====================================================

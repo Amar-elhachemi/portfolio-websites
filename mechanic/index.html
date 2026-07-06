@@ -1,374 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AutoFix Garage</title>
+<title>Torque Garage</title>
+<meta name="description" content="Independent auto repair and diagnostics. Honest pricing, same-day service.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
 <link rel="stylesheet" href="style.css">
-
 </head>
-
-<body>
+<body data-fx="grid" data-fx-color="255,106,0" data-fx-color2="63,169,245">
 
 <header>
-
 <nav class="navbar">
-
-<div class="logo">
-
-AUTOFIX
-
-</div>
-
+<div class="logo">TORQUE<span>.</span></div>
 <ul class="nav-links">
-
 <li><a href="#home">Home</a></li>
-
 <li><a href="#about">About</a></li>
-
 <li><a href="#services">Services</a></li>
-
-<li><a href="#stats">Stats</a></li>
-
+<li><a href="#gallery">Work</a></li>
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
-<div class="menu-btn">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
-
+<a href="#contact" class="nav-cta">Get a Quote</a>
+<div class="menu-btn"><i class="fa-solid fa-bars"></i></div>
 </nav>
-
 </header>
 
 <section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>
-
-Professional Car Repair
-
-</h1>
-
-<p>
-
-Trusted mechanics.
-
-Fast service.
-
-Affordable prices.
-
-</p>
-
-<a href="#contact" class="btn">
-
-Book Service
-
-</a>
-
+<div class="hero-inner">
+<span class="eyebrow">Independent Garage · All Makes</span>
+<h1>Fixed right.<br>Explained plainly.</h1>
+<p>Full diagnostics, honest quotes before we touch the car, and a mechanic who'll actually show you what's wrong.</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn">Get a Free Quote</a>
+<a href="#services" class="btn secondary">Our Services</a>
 </div>
-
+</div>
 </section>
 
 <section class="about" id="about">
-
 <div class="container">
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=900">
-
+<div class="about-media" data-reveal>
+<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=900&q=80" alt="Mechanic working on car">
 </div>
-
-<div>
-
-<h2>
-
-About Our Garage
-
-</h2>
-
-<p>
-
-With more than 15 years of experience, our certified technicians repair every vehicle using modern diagnostic equipment and genuine parts.
-
-</p>
-
+<div class="about-text" data-reveal>
+<span class="eyebrow">Who We Are</span>
+<h2>15 years under the hood.</h2>
+<p>Torque Garage has been fixing cars in this neighborhood since 2009 — no dealership markups, no upselling parts you don't need.</p>
+<p>Every job gets a written quote before work starts, and every replaced part is shown to you, not just billed.</p>
+<div class="about-stats">
+<div><strong>15yr</strong><span>In business</span></div>
+<div><strong>6</strong><span>Certified mechanics</span></div>
+<div><strong>4.8★</strong><span>Google rating</span></div>
 </div>
-
 </div>
-
+</div>
 </section>
 
 <section class="services" id="services">
-
-<h2>
-
-Our Services
-
-</h2>
-
-<div class="cards">
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Services</span>
+<h2>What We Fix</h2>
+<p>Same-day service on most jobs — call ahead to guarantee a bay.</p>
+</div>
+<div class="cards-grid" data-reveal>
 <div class="card">
-
 <i class="fa-solid fa-oil-can"></i>
-
-<h3>
-
-Oil Change
-
-</h3>
-
-<p>
-
-Premium oils and filters.
-
-</p>
-
+<h3>Oil &amp; Filter Change</h3>
+<p>Full synthetic or standard, 20-minute turnaround.</p>
+<span class="price">From 3,500 DZD</span>
 </div>
-
 <div class="card">
-
+<i class="fa-solid fa-gauge"></i>
+<h3>Full Diagnostics</h3>
+<p>Computer scan and physical inspection, written report.</p>
+<span class="price">From 2,000 DZD</span>
+</div>
+<div class="card">
 <i class="fa-solid fa-car-burst"></i>
-
-<h3>
-
-Diagnostics
-
-</h3>
-
-<p>
-
-Computer vehicle scanning.
-
-</p>
-
+<h3>Brakes &amp; Suspension</h3>
+<p>Pads, discs, shocks — parts shown before install.</p>
+<span class="price">From 6,000 DZD</span>
 </div>
-
 <div class="card">
-
-<i class="fa-solid fa-gears"></i>
-
-<h3>
-
-Engine Repair
-
-</h3>
-
-<p>
-
-Professional engine maintenance.
-
-</p>
-
+<i class="fa-solid fa-battery-full"></i>
+<h3>Battery &amp; Electrical</h3>
+<p>Testing, replacement, and wiring diagnostics.</p>
+<span class="price">From 2,500 DZD</span>
 </div>
-
-<div class="card">
-
-<i class="fa-solid fa-car-side"></i>
-
-<h3>
-
-Brake Service
-
-</h3>
-
-<p>
-
-Safe braking guaranteed.
-
-</p>
-
 </div>
-
-</div>
-
 </section>
 
-<section class="stats" id="stats">
-
-<h2>
-
-Why Drivers Trust Us
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h1 class="counter" data-target="1500">
-
-0
-
-</h1>
-
-<p>
-
-Cars Repaired
-
-</p>
-
+<section class="gallery" id="gallery">
+<div class="section-head" data-reveal>
+<span class="eyebrow">In The Shop</span>
+<h2>Recent Work</h2>
 </div>
-
-<div class="card">
-
-<h1 class="counter" data-target="15">
-
-0
-
-</h1>
-
-<p>
-
-Years Experience
-
-</p>
-
+<div class="gallery-grid" data-reveal data-lightbox>
+<figure><img src="https://images.unsplash.com/photo-1518987048-93e29699e79a?w=600&q=80"><figcaption>Diagnostics</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80"><figcaption>Engine Bay</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80"><figcaption>Lift Bay</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1632823469850-1b7b1e8b7692?w=600&q=80"><figcaption>Toolwall</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&q=80"><figcaption>Brakes</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1486684228390-cbb877300d84?w=600&q=80"><figcaption>Garage Front</figcaption></figure>
 </div>
-
-<div class="card">
-
-<h1 class="counter" data-target="98">
-
-0
-
-</h1>
-
-<p>
-
-Happy Clients %
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h1 class="counter" data-target="24">
-
-0
-
-</h1>
-
-<p>
-
-Emergency Service
-
-</p>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="gallery">
-
-<h2>
-
-Recent Repairs
-
-</h2>
-
-<div class="gallery-grid">
-
-<img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=700">
-
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=700">
-
-<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=700">
-
-<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=700">
-
-<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=700">
-
-<img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=700">
-
+<section class="testimonials">
+<div class="section-head" data-reveal>
+<span class="eyebrow">Customers</span>
+<h2>Trusted By Drivers</h2>
 </div>
-
+<div class="testimonials-wrap" data-reveal>
+<div class="testimonial active">
+<div class="stars">★★★★★</div>
+<p>"First garage that showed me the actual worn part instead of just charging me for it."</p>
+<div class="author">— Rachid M.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Quoted me before touching the car, price didn't change after. Rare these days."</p>
+<div class="author">— Hakim D.</div>
+</div>
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Same-day brake job, fair price, no upsell. My go-to garage now."</p>
+<div class="author">— Farid Z.</div>
+</div>
+</div>
 </section>
 
 <section class="contact" id="contact">
-
-<h2>
-
-Need Immediate Help?
-
-</h2>
-
-<p>
-
-Call us or message us on WhatsApp.
-
-</p>
-
-<div class="contact-buttons">
-
-<a href="#">
-
-<i class="fa-solid fa-phone"></i>
-
-Call
-
-</a>
-
-<a href="#">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
-
-<a href="#">
-
-<i class="fa-solid fa-location-dot"></i>
-
-Location
-
-</a>
-
+<div class="section-head" data-reveal>
+<span class="eyebrow">Contact</span>
+<h2>Bring It In</h2>
 </div>
-
+<div class="contact-grid" data-reveal>
+<div class="contact-info">
+<div class="row"><i class="fa-solid fa-location-dot"></i><div><strong>Address</strong><span>21 Route Nationale, Blida</span></div></div>
+<div class="row"><i class="fa-solid fa-clock"></i><div><strong>Hours</strong><span>Mon–Sat · 8:00am – 6:30pm</span></div></div>
+<div class="row"><i class="fa-solid fa-phone"></i><div><strong>Phone</strong><span>+213 550 00 00 00</span></div></div>
+<div class="social-row">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<form class="demo-form">
+<input type="text" placeholder="Your name" required>
+<input type="text" placeholder="Vehicle make &amp; model" required>
+<textarea placeholder="What's the issue?"></textarea>
+<button type="submit">Request Quote</button>
+</form>
+</div>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 Amar Web Studio. All Rights Reserved.
-
-</p>
-
+<div class="foot-logo">TORQUE</div>
+<p>21 Route Nationale, Blida · Walk-ins Welcome</p>
+<p class="credit">Template by <a href="#">Amar Web Studio</a> — demo content, not a real business.</p>
 </footer>
 
-<a href="#" class="floating">
-
-<i class="fa-solid fa-phone"></i>
-
-</a>
+<a href="https://wa.me/213550030651" class="floating" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
