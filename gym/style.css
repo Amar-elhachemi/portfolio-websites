@@ -1,0 +1,468 @@
+/*=========================
+RESET
+=========================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0b0b0b;
+color:#fff;
+overflow-x:hidden;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+section{
+padding:100px 8%;
+}
+
+/*=========================
+NAVBAR
+=========================*/
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+transition:.35s;
+}
+
+header.scrolled{
+background:rgba(10,10,10,.96);
+backdrop-filter:blur(12px);
+box-shadow:0 10px 35px rgba(0,255,170,.12);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:22px 8%;
+}
+
+.logo{
+font-family:'Bebas Neue',sans-serif;
+font-size:2.5rem;
+letter-spacing:3px;
+color:#00ff88;
+}
+
+.nav-links{
+display:flex;
+gap:40px;
+}
+
+.nav-links a{
+font-weight:500;
+position:relative;
+transition:.3s;
+}
+
+.nav-links a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#00ff88;
+transition:.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.menu-btn{
+display:none;
+font-size:30px;
+cursor:pointer;
+}
+
+/*=========================
+HERO
+=========================*/
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1800")
+center/cover;
+}
+
+.hero-content{
+max-width:850px;
+}
+
+.hero h1{
+font-family:'Bebas Neue',sans-serif;
+font-size:95px;
+letter-spacing:3px;
+line-height:1;
+margin-bottom:20px;
+text-shadow:0 0 25px rgba(0,255,136,.25);
+}
+
+.hero p{
+font-size:22px;
+color:#ddd;
+margin-bottom:40px;
+}
+
+.btn{
+display:inline-block;
+padding:18px 45px;
+background:#00ff88;
+color:#111;
+font-weight:700;
+border-radius:50px;
+transition:.35s;
+}
+
+.btn:hover{
+transform:translateY(-6px);
+box-shadow:0 0 30px rgba(0,255,136,.45);
+}
+
+/*=========================
+ABOUT
+=========================*/
+
+.container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.about img{
+border-radius:20px;
+box-shadow:0 20px 45px rgba(0,255,136,.15);
+}
+
+.about h2{
+font-family:'Bebas Neue',sans-serif;
+font-size:58px;
+letter-spacing:2px;
+color:#00ff88;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:18px;
+line-height:1.9;
+color:#cfcfcf;
+}
+
+/*=========================
+PLANS
+=========================*/
+
+.plans{
+background:#111;
+text-align:center;
+}
+
+.plans h2{
+font-family:'Bebas Neue',sans-serif;
+font-size:60px;
+letter-spacing:2px;
+margin-bottom:60px;
+color:#00ff88;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#191919;
+padding:40px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.05);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:#00ff88;
+box-shadow:0 20px 45px rgba(0,255,136,.18);
+}
+
+.card h1{
+font-family:'Bebas Neue',sans-serif;
+font-size:60px;
+margin:20px 0;
+color:#00ff88;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.premium{
+transform:scale(1.06);
+border:2px solid #00ff88;
+background:#151515;
+}
+
+.premium:hover{
+transform:scale(1.08);
+}
+/*=========================
+TRAINERS
+=========================*/
+
+.trainers{
+background:#0b0b0b;
+text-align:center;
+}
+
+.trainers h2{
+font-family:'Bebas Neue',sans-serif;
+font-size:60px;
+letter-spacing:2px;
+margin-bottom:60px;
+color:#00ff88;
+}
+
+.trainers .card{
+overflow:hidden;
+padding:0;
+background:#161616;
+}
+
+.trainers .card img{
+height:350px;
+object-fit:cover;
+transition:.4s;
+}
+
+.trainers .card:hover img{
+transform:scale(1.08);
+}
+
+.trainers .card h3{
+margin-top:25px;
+font-size:28px;
+}
+
+.trainers .card p{
+padding-bottom:30px;
+color:#bbb;
+}
+
+/*=========================
+STATS
+=========================*/
+
+.stats{
+background:#111;
+text-align:center;
+}
+
+.stats h2{
+font-family:'Bebas Neue',sans-serif;
+font-size:60px;
+letter-spacing:2px;
+margin-bottom:60px;
+color:#00ff88;
+}
+
+.stats .card h1{
+font-size:70px;
+color:#00ff88;
+margin-bottom:10px;
+text-shadow:0 0 18px rgba(0,255,136,.35);
+}
+
+.stats .card p{
+color:#ddd;
+font-size:18px;
+}
+
+/*=========================
+CONTACT
+=========================*/
+
+.contact{
+background:#0b0b0b;
+text-align:center;
+}
+
+.contact h2{
+font-family:'Bebas Neue',sans-serif;
+font-size:60px;
+letter-spacing:2px;
+margin-bottom:20px;
+color:#00ff88;
+}
+
+.contact p{
+font-size:18px;
+color:#bbb;
+margin-bottom:40px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact-buttons a{
+padding:18px 40px;
+background:#00ff88;
+color:#111;
+border-radius:50px;
+font-weight:700;
+transition:.35s;
+}
+
+.contact-buttons a:hover{
+transform:translateY(-6px);
+box-shadow:0 0 30px rgba(0,255,136,.4);
+}
+
+/*=========================
+FOOTER
+=========================*/
+
+footer{
+background:#050505;
+padding:30px;
+text-align:center;
+color:#888;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+/*=========================
+FLOATING BUTTON
+=========================*/
+
+.floating{
+position:fixed;
+right:25px;
+bottom:25px;
+width:70px;
+height:70px;
+background:#00ff88;
+color:#111;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+box-shadow:0 0 30px rgba(0,255,136,.4);
+transition:.35s;
+z-index:999;
+}
+
+.floating:hover{
+transform:scale(1.12);
+}
+
+/*=========================
+ANIMATIONS
+=========================*/
+
+.hidden{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.nav-links a.active{
+color:#00ff88;
+}
+
+/*=========================
+MOBILE
+=========================*/
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:58px;
+}
+
+.container{
+grid-template-columns:1fr;
+}
+
+.nav-links{
+display:none;
+}
+
+.nav-links.active{
+display:flex;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#111;
+flex-direction:column;
+padding:30px;
+text-align:center;
+}
+
+.menu-btn{
+display:block;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.contact-buttons{
+flex-direction:column;
+}
+
+.premium{
+transform:none;
+}
+
+.premium:hover{
+transform:translateY(-10px);
+}
+
+}
